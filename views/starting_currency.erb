@@ -1,0 +1,10 @@
+<h1>Convert <%= @startc %></h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+
+ <% @currencies.each_key do |cur| %>
+  <li> <a href="/<%= @startc %>/<%= cur %>" >Convert 1 <%= @startc %> to <%= cur %> ... </a></li> 
+<% end %> 
+</ul>
